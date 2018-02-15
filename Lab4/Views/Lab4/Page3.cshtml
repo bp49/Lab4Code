@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Page3";
+}
+@model IEnumerable<string>
+<div class="container body-content">
+    <h2 class="bg-warning text-white">@ViewData["Pg3Title"]</h2>
+</div>
+<ol>
+    @foreach(string drink in Model)
+    {
+       <li>@drink</li>
+
+    }
+</ol>
+

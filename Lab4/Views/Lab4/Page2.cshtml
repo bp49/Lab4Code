@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Page2";
+}
+<div class="container body-content bg-info text-white">
+<h2>Page2 - Random Email Generator</h2>
+    </div>
+<div>Select the number of Emails to display:</div>
+<a href= "/Lab4/Page2/1" class="btn btn-sm btn-info">1</a>
+<a href= "/Lab4/Page2/2" class="btn btn-sm btn-info">2</a>
+<a href= "/Lab4/Page2/3" class="btn btn-sm btn-info">3</a>
+<a href="/Lab4/Page2/4" class="btn btn-sm btn-info">4</a>
+<a href="/Lab4/Page2/5" class="btn btn-sm btn-info">5</a>
+
+
+    @for (int i = 0; i < (int)ViewData["Num"]; i++)
+    {
+<div class="panel panel-default">
+    <h1 class="container bg-success text-white">Profile</h1>
+    <div> Name: @LoremNET.Lorem.Words(2)</div>
+    <div> Email: @LoremNET.Lorem.Email()</div>
+    <div> Bio: @LoremNET.Lorem.Paragraph(5,6, 4, 10)</div>
+</div>
+    }<br />
+
+<a href="/Lab4/Page3"class= "btn btn-success btn-lg">Page 3</a>
